@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Evita scroll innecesario */
+}
+
+/* Header fijo */
+.detail-header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #E4F4F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.user-icon img{
+    width: 24px;
+    height: 24px;
+}
+
+.detail-header h1 {
+    font-size: 1.2rem;
+    color: #00C4CC;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.close-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Contenido principal */
+.content {
+    margin-top: 70px; /* Espacio para el header */
+    margin-bottom: 60px; /* Espacio para el footer */
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.place-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.save-button {
+    background-color: #E4F4F8;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/* Footer fijo */
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #E4F4F8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-link {
+    color: #00C4CC;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+.corazon {
+    background: none;
+    border: none;
+}
+.si {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
