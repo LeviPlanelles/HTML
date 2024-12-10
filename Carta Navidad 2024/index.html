@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Navideña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carta">
+            <h1>Carta Papá Noel</h1>
+        </br>
+            <p id="contenido-carta" class="parrafo">
+                Querido Papá Noel,</br>Este año he sido muy bueno (o por lo menos eso pienso yo),a parte, me ha comentando tu panchi-duende de confianza también llamado mamá que aceptabas cualquier formato
+                 con tal de que te enviemos la carta, pues este año he decidido hacertela en una página web. Se que tú y la tecnología
+                 no os lleváis muy bien pero creo que si lo intentas te las podrás apañar. Respecto a los regalos, este año me 
+                 gustarían las dos cositas que te he dejado ahí abajo con los botones, haz clic en ellos y verás los <a href="https://www.underarmour.es/es-es/p/manga_larga/camiseta_de_manga_larga_heatgear_para_hombre/1361524.html?dwvar_1361524_color=001&dwvar_1361524_size=MD&dwvar_1361524_length=R&cid=PLA_OMD_ES_33311_NG6Q5M1O9U__71700000115754710&gad_source=1&gclid=CjwKCAiA6t-6BhA3EiwAltRFGL77qcfBviU8YVrTI6KVd2jnpG__UaVOqYil5lRntSLTaLOCJzQWKxoCDEoQAvD_BwE&gclsrc=aw.ds" target="_blank"><strong>regalos</strong></a> que quiero.
+            </p>
+            <div class="botones">
+                <button onclick="mostrarImagen('camiseta.avif')">REGALOOO</br> (haz clic)</button>
+                <button onclick="mostrarImagenConSonido('gti.jpg')">REGALOOO</br> (haz clic)</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img id="imagen-modal" src="" alt="Imagen navideña">
+    </div>
+    <script src="script.js"></script>
+    <audio id="sonido-navidad" src="sonido.mp3"></audio>
+</body>
+</html>
