@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Navideña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carta">
+            <h1>Carta Navideña</h1>
+            <p id="contenido-carta">
+                Aquí va el contenido de tu carta navideña. Puedes escribir tu mensaje personalizado en este espacio.
+            </p>
+            <div class="botones">
+                <button onclick="mostrarImagen('camiseta.avif')">Camiseta compresiva M (Negra)</button>
+                <button onclick="mostrarImagen('gti.jpg')">Golf GTI</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img id="imagen-modal" src="" alt="Imagen navideña">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
